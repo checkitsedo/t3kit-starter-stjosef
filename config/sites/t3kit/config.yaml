@@ -6,99 +6,35 @@ errorHandling:
     errorContentSource: 't3://page?uid=73'
 languages:
   -
-    title: English
+    title: German
     enabled: true
     languageId: 0
     base: /
-    typo3Language: default
-    locale: en_US.UTF-8
-    iso-639-1: en
-    navigationTitle: English
-    hreflang: en-US
-    direction: ltr
-    flag: us
-    websiteTitle: ''
-    solr_core_read: '%env(SOLR_CORE_EN)%'
-  -
-    title: Swedish
-    enabled: true
-    languageId: 1
-    base: /sv/
-    typo3Language: sv
-    locale: sv_SE.UTF-8
-    iso-639-1: sv
-    navigationTitle: Swedish
-    hreflang: sv-SE
-    direction: ltr
-    fallbackType: free
-    fallbacks: ''
-    flag: se
-    websiteTitle: ''
-    solr_core_read: '%env(SOLR_CORE_SV)%'
-  -
-    title: German
-    enabled: true
-    languageId: 2
-    base: /de/
     typo3Language: de
     locale: de_DE.UTF-8
     iso-639-1: de
     navigationTitle: German
     hreflang: de-DE
     direction: ltr
-    fallbackType: free
-    fallbacks: ''
     flag: de
     websiteTitle: ''
+    solr_core_read: '%env(SOLR_CORE_EN)%'
+  -
+    title: English
+    enabled: true
+    languageId: 1
+    base: /en/
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en-US
+    direction: ltr
+    fallbackType: free
+    fallbacks: ''
+    flag: us
+    websiteTitle: ''
     solr_core_read: '%env(SOLR_CORE_DE)%'
-  -
-    title: Norwegian
-    enabled: true
-    languageId: 3
-    base: /no/
-    typo3Language: 'no'
-    locale: no_NO.UTF-8
-    iso-639-1: 'no'
-    navigationTitle: Norwegian
-    hreflang: no-NO
-    direction: ltr
-    fallbackType: free
-    fallbacks: ''
-    flag: 'no'
-    websiteTitle: ''
-    solr_core_read: '%env(SOLR_CORE_NO)%'
-  -
-    title: Danish
-    enabled: true
-    languageId: 4
-    base: /da/
-    typo3Language: da
-    locale: da_DK.UTF-8
-    iso-639-1: da
-    navigationTitle: Danish
-    hreflang: da-DK
-    direction: ltr
-    fallbackType: free
-    fallbacks: ''
-    flag: dk
-    websiteTitle: ''
-    solr_core_read: '%env(SOLR_CORE_DA)%'
-  -
-    title: French
-    enabled: true
-    languageId: 5
-    base: /fr/
-    typo3Language: fr
-    locale: fr_FR.UTF-8
-    iso-639-1: fr
-    navigationTitle: French
-    hreflang: fr-FR
-    direction: ltr
-    fallbackType: free
-    fallbacks: ''
-    flag: fr
-    websiteTitle: ''
-    solr_core_read: '%env(SOLR_CORE_FR)%'
 rootPageId: 1
 routeEnhancers:
   PageTypeSuffix:
