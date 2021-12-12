@@ -1,0 +1,139 @@
+// ===== bootstrap reboot & grid =====
+
+// Import project variables on top of Bootstrap to override default theme
+@import 'bootstrap/variables';
+
+// Bootstrap Configuration
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// // Bootstrap reboot
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+
+// // Bootstrap Grid
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+// // Bootstrap Helpers
+@import "bootstrap/scss/helpers/clearfix";
+@import "bootstrap/scss/helpers/ratio";
+@import "bootstrap/scss/helpers/position";
+@import "bootstrap/scss/helpers/visually-hidden";
+@import "bootstrap/scss/helpers/stretched-link";
+@import "bootstrap/scss/helpers/text-truncation";
+
+// Bootstrap Utilities
+// Only use the utilities we need
+$utilities: map-get-multiple(
+  $utilities,
+  (
+    "display",
+    "order",
+    "flex",
+    "flex-direction",
+    "flex-grow",
+    "flex-shrink",
+    "flex-wrap",
+    "justify-content",
+    "align-items",
+    "align-content",
+    "align-self",
+    "margin",
+    // "margin-x",
+    // "margin-y",
+    "margin-top",
+    "margin-end",
+    "margin-bottom",
+    "margin-start",
+    "negative-margin",
+    // "negative-margin-x",
+    // "negative-margin-y",
+    "negative-margin-top",
+    "negative-margin-end",
+    "negative-margin-bottom",
+    "negative-margin-start",
+    "padding",
+    // "padding-x",
+    // "padding-y",
+    "padding-top",
+    "padding-end",
+    "padding-bottom",
+    "padding-start",
+    //===================
+    "align",
+    "float",
+    "overflow",
+    // "shadow",
+    "position",
+    "top",
+    "bottom",
+    "start",
+    "end",
+    // "translate-middle",
+    // "border",
+    // "border-top",
+    // "border-end",
+    // "border-bottom",
+    // "border-start",
+    // "border-color",
+    // "border-width",
+    "width",
+    "max-width",
+    "viewport-width",
+    "min-viewport-width",
+    "height",
+    "max-height",
+    "viewport-height",
+    "min-viewport-height",
+    // "gap",
+    // "font-size",
+    // "font-style",
+    // "font-weight",
+    // "text-transform",
+    "text-align",
+    // "color",
+    // "line-height",
+    // "background-color",
+    // "gradient",
+    // "white-space",
+    // "text-decoration",
+    // "word-wrap",
+    // "font-family",
+    "user-select",
+    "pointer-events",
+    // "rounded",
+    // "rounded-top",
+    // "rounded-end",
+    // "rounded-bottom",
+    // "rounded-start",
+    "visibility",
+  )
+);
+
+@import "bootstrap/scss/utilities/api";
+
+// Bootstrap Components
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar";
+
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/card";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/forms";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/accordion";
+@import "bootstrap/scss/transitions";

@@ -1,0 +1,58 @@
+{
+  "name": "theme_newcustomproject",
+  "version": "10.0.0",
+  "description": "newcustomproject project. Based on t3kit10",
+  "scripts": {
+    "lint-css": "stylelint 'theme/src/css/**/*.css'",
+    "lint-scss": "stylelint 'theme/src/scss/**/*.scss'",
+    "lint-js": "standard -v 'theme/src/js/**/*.js' | snazzy",
+    "lint-config": "standard -v 'theme/config/**/*.js' | snazzy",
+    "lint": "npm-run-all --parallel lint-css lint-scss lint-js lint-config",
+    "favicons": "node theme/config/favicons.js",
+    "icons": "node theme/config/icons.js",
+    "build-dev": "node theme/config/build.js",
+    "build-prod": "NODE_ENV=production node theme/config/build.js",
+    "build": "npm-run-all build-dev build-prod",
+    "start": "node theme/config/start.js"
+  },
+  "dependencies": {
+    "awesomplete": "~1.1.5",
+    "bootstrap": "~v5.1.1",
+    "simplelightbox": "~2.8.1",
+    "swiper": "~7.0.6"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.15.1",
+    "npm": ">=7.9.0"
+  },
+  "browserslist": [
+    "> 1.6% and last 2 versions",
+    "IOS >= 13 and > 1.5%",
+    "Safari >= 13 and > 1.5%"
+  ],
+  "standard": {
+    "ignore": [
+      "vendor/",
+      "dist/",
+      "Resources/Public/"
+    ]
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "plugins": [
+      "stylelint-no-unsupported-browser-features"
+    ],
+    "rules": {
+      "selector-pseudo-element-colon-notation": "single",
+      "no-descending-specificity": null,
+      "comment-empty-line-before": null,
+      "at-rule-no-unknown": null,
+      "plugin/no-unsupported-browser-features": true
+    },
+    "ignoreFiles": [
+      "**/vendor/**/*.css",
+      "Resources/Public/**/*.css"
+    ]
+  }
+}
