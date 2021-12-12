@@ -14,7 +14,12 @@ return [
         'Connections' => [
             'Default' => [
                 'charset' => 'utf8',
+                'dbname' => '',
                 'driver' => 'mysqli',
+                'host' => '127.0.0.1',
+                'password' => '',
+                'port' => 3306,
+                'user' => '',
             ],
         ],
     ],
@@ -141,7 +146,7 @@ return [
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'TYPO3 :: t3kit10 :: Dev mode *(local)',
-        'systemLocale' => 'C.UTF-8',
+        'systemLocale' => 'de_CH.UTF-8',
         'systemMaintainers' => [
             1,
         ],
